@@ -1,0 +1,19 @@
+#profile{
+    width: 100%;
+}
+
+table {
+    margin: 1em;
+    padding: 2em;
+    width: 100%;
+}
+
+td {
+    padding: 1em;
+}
+
+tr {
+    border-bottom: solid;
+    border-bottom-color: #A0D9D9;
+    border-bottom-width: 2px;
+}
