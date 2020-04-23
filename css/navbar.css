@@ -1,4 +1,5 @@
 /* FONTS  */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 .wrapper {
   display: flex;
@@ -14,17 +15,21 @@
   z-index: 998;
   background-color: #a0d9d9;
   color: #000;
-  transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.2s;
 }
 
 #content {
   width: calc(100% - 250px);
   padding: 40px;
   min-height: 100vh;
-  transition: all 0.3s;
+  transition: all 0.2s;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.container {
+  z-index: 1;
 }
 
 #copyright {
@@ -80,9 +85,6 @@ a[aria-expanded="true"] {
   font-weight: 800;
   background: #91abc6;
 }
-.main-content {
-  width: auto;
-}
 
 #sidebarCollapse {
   display: none;
@@ -94,12 +96,18 @@ a[aria-expanded="true"] {
 
 @media (max-width: 850px) {
   #sidebarCollapse {
-    transition: all 0.3s;
+    transition: all 0.33s;
     display: initial;
-    position: sticky;
+    position: fixed;
     z-index: 999;
-    top: 5px;
-    left: 5px;
+    top: 10px;
+    left: 10px;
+    background-color: #91abc6;
+    border: solid #91abc6;
+  }
+
+  #sidebarCollapse.active {
+    left: 175px;
   }
   #sidebar {
     left: 0px;
@@ -121,5 +129,24 @@ a[aria-expanded="true"] {
     position: absolute;
     top: 0;
     right: 0;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 2;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+  }
+  /* display .overlay when it has the .active class */
+  .overlay.active {
+    display: block;
+    opacity: 1;
   }
 }
