@@ -11,9 +11,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
     integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
     crossorigin="anonymous"></script>
@@ -21,10 +22,10 @@
     integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
     crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/projectStyles.css">
+  <link rel="stylesheet" href="css/projectStyles.css">
 
-    <script src="js/jquery-csv.js"></script>
-    <script src="js/auto_card.js"></script>
+  <script src="js/jquery-csv.js"></script>
+  <script src="js/auto_card.js"></script>
 
   <title>Projects</title>
 </head>
@@ -65,129 +66,237 @@
       <button type="button" id="sidebarCollapse" class="btn btn-info">
         <i id="icon" class="fas fa-bars"></i>
       </button>
-      <div class="container">
+      <div class="container-fluid">
+        <div class="row page-title">
+          <div class="col-11">
+            <h1>Projects</h1>
+          </div>
 
-        <h1>Projects</h1>
+        </div>
         <div class="row">
 
-          <div class="input-group col-md-9">
-            <input class="form-control py-2 border-right-0 border roundedButton" type="search" placeholder="Search..." id="example-search-input">
+          <div class="input-group col-md-9 col-sm-9 col-xs-9 ">
+            <input class="form-control py-2 border-right-0 border roundedButton" type="search" placeholder="Search..."
+              id="example-search-input">
             <span class="input-group-append">
               <button class="btn btn-outline-secondary border-left-0 border roundedButton" type="button">
-                    <i class="fa fa-search"></i>
+                <i class="fa fa-search"></i>
               </button>
             </span>
           </div>
 
-          <button type="button" class="btn btn-secondary col-md-3 roundedButton">Filter</button>
-          
+          <button type="button" class="btn btn-secondary col-md-3 col-sm-3 col-xs-3 roundedButton ">Filter</button>
 
-        
+
+
+          <div class="col-12"><br></div>
         </div>
-          <br>
-        
+
+
+
         <div class="row justify-content-around">
-
-          <div class="col-md-4">
-            <div class="card roundedButton" style="width:18rem;">
-              <img class="card-img-top roundedButton" src="images/is_projects.png" alt="is-project-logo" data-toggle="modal" data-target="#is-projects-webpage" style="cursor:pointer;">
+          <div class="col-sm-5 col-md-5 col-lg-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p1.png" class="card-img" alt="Project 1">
               <div class="card-body">
-                <h5 class="card-title text-center">IS Projects Page</h5>
+                <h5 class="card-title">Project 1</h5>
+
+
               </div>
             </div>
-        
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p2.png" class="card-img" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
 
-            <div class="modal fade" id="is-projects-webpage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">IS Projects Page</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img class="img-left" src="images/is_projects.png" style="width: 50%">
-                    Lorem ipsum...yada yada
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-4">
+
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p3.png" class="card-img" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p4.png" class="card-img" alt="Project 4">
+              <div class="card-body">
+                <h5 class="card-title">Project 4</h5>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p5.png" class="card-img" alt="Project 5">
+              <div class="card-body">
+                <h5 class="card-title">Project 5</h5>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p6.png" class="card-img" alt="Project 6">
+              <div class="card-body">
+                <h5 class="card-title">Project 6</h5>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p7.png" class="card-img" alt="Project 7">
+              <div class="card-body">
+                <h5 class="card-title">Project 7</h5>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p8.png" class="card-img" alt="Project 8">
+              <div class="card-body">
+                <h5 class="card-title">Project 8</h5>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-5 col-lg-4">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
+              <img src="images/p9.png" class="card-img" alt="Project 9">
+              <div class="card-body">
+                <h5 class="card-title">Project 9</h5>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- 
+
+          <div class="row">
+
+            <div class="col-sm-5 col-md-5 col-lg-4">
+              <div class="card roundedButton" style="width:18rem;">
+                <img class="card-img-top roundedButton" src="images/is_projects.png" alt="is-project-logo"
+                  data-toggle="modal" data-target="#is-projects-webpage" style="cursor:pointer;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">IS Projects Page</h5>
+                </div>
+              </div>
+
+
+              <div class="modal fade" id="is-projects-webpage" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">IS Projects Page</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-left" src="images/is_projects.png" style="width: 50%">
+                      Lorem ipsum...yada yada
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
 
-          </div>
-
-          <div class="col-md-4">
-            <div class="card rounded-100" style="width:18rem;">
-              <img class="card-img-top" src="images/is_projects.png" alt="is-project-logo" data-toggle="modal" data-target="#is-projects-webpage">
-              <div class="card-body">
-                <h5 class="card-title text-center">IS Projects Page</h5>
+            <div class="col-sm-5 col-md-5 col-lg-4">
+              <div class="card rounded-100" style="width:18rem;">
+                <img class="card-img-top" src="images/is_projects.png" alt="is-project-logo" data-toggle="modal"
+                  data-target="#is-projects-webpage">
+                <div class="card-body">
+                  <h5 class="card-title text-center">IS Projects Page</h5>
+                </div>
               </div>
-            </div>
-        
 
-            <div class="modal fade" id="is-projects-webpage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">IS Projects Page</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img class="img-left" src="images/is_projects.png" style="width: 50%">
-                    Lorem ipsum...yada yada
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+              <div class="modal fade" id="is-projects-webpage" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">IS Projects Page</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-left" src="images/is_projects.png" style="width: 50%">
+                      Lorem ipsum...yada yada
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
 
-          </div>
-
-          <div class="col-md-4">
-            <div class="card rounded-100" style="width:18rem;">
-              <img class="card-img-top" src="images/is_projects.png" alt="is-project-logo" data-toggle="modal" data-target="#is-projects-webpage">
-              <div class="card-body">
-                <h5 class="card-title text-center">IS Projects Page</h5>
-              </div>
-            </div>
-        
-
-            <div class="modal fade" id="is-projects-webpage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">IS Projects Page</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <img class="img-left" src="images/is_projects.png" style="width: 50%">
-                    Lorem ipsum...yada yada
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
+            <div class="col-sm-5 col-md-5 col-lg-4">
+              <div class="card rounded-100">
+                <img class="card-img-top" src="images/is_projects.png" alt="is-project-logo" data-toggle="modal"
+                  data-target="#is-projects-webpage">
+                <div class="card-body">
+                  <h5 class="card-title text-center">IS Projects Page</h5>
                 </div>
               </div>
-            </div>
 
-          </div>
-          
 
-       
+              <div class="modal fade" id="is-projects-webpage" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">IS Projects Page</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-left" src="images/is_projects.png" style="width: 50%">
+                      Lorem ipsum...yada yada
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
         </div>
+
+
 
       </div>
+
     </div>
-    <div id="overlay" class="overlay"></div>
+  </div>
+  <div id="overlay" class="overlay"></div>
   </div>
 
 
@@ -206,7 +315,7 @@
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-  
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>
