@@ -1,5 +1,44 @@
+#contact {
+    width: 95%;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+h6 {
+    color: #91ABC6;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #91ABC6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+input[type=submit]:hover {
+    opacity: 50%;
+}
+
+
 #profile{
     width: 100%;
+}
+  
+#submit-button {
+    width: 120px;
 }
 
 table {
