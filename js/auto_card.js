@@ -4,18 +4,20 @@
 // jquery plug in? https://github.com/typeiii/jquery-csv https://stackoverflow.com/questions/1293147/javascript-code-to-parse-csv-data
 
 
-$.ajax({
-    url: 'projects.csv',
-    dataType: 'text',
-}).done(generate);
+// $.ajax({
+//     url: 'projects.csv',
+//     dataType: 'text',
+// }).done(generate);
 
-function generate(data) {
-    // var allRows = data.split(/\r?\n|\r/); // ???
-    var projects = new Array();
-    // append data from csv into array somehow??
-}
+// function generate(data) {
+//     // var allRows = data.split(/\r?\n|\r/); // ???
+//     var projects = new Array();
+//     // append data from csv into array somehow??
+// }
 
-function renderCards(projects) {
+function renderCards() {
+    var projects = $.csv.toArrays('./projects.csv')
+    console.log('function has been called');
     document.getElementById("projects").innerHTML = "";
     
     for(var i = 0; i < projects.length; i++) {
