@@ -24,8 +24,7 @@
 
   <link rel="stylesheet" href="css/projectStyles.css">
 
-  <script src="js/jquery-csv.js"></script>
-  <script src="js/auto_card.js"></script>
+  <script src="js/search.js"></script>
 
   <title>Projects</title>
 </head>
@@ -76,8 +75,8 @@
         <div class="row">
 
           <div class="input-group col-md-9 col-sm-9 col-xs-9 ">
-            <input class="form-control py-2 border-right-0 border roundedButton" type="search" placeholder="Search..."
-              id="example-search-input">
+            <input class="form-control py-2 border-right-0 border roundedButton" placeholder="Search..."
+              id="search" onkeyup="search()" type="text">
             <span class="input-group-append">
               <button class="btn btn-outline-secondary border-left-0 border roundedButton" type="button">
                 <i class="fa fa-search"></i>
@@ -95,18 +94,18 @@
         <div class="row justify-content-around">
 
           <!-- Project 1 -->
-          <div class="col-sm-5 col-md-5 col-lg-4">
-            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p1.png" class="card-img" alt="Project 1" data-toggle="modal" data-target="#project1" style="cursor:pointer;">
+          <div class="col-sm-5 col-md-5 col-lg-4" id="project1">
+            <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black" >
+              <img src="images/p1.png" class="card-img" alt="Project 1" data-toggle="modal" data-target="#project1m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project1" style="cursor:pointer;">Project 1</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project1m" style="cursor:pointer;">Project 1</h5>
 
 
               </div>
             </div>
           </div>
 
-          <div class="modal fade" id="project1" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project1m" tabindex="-1" role="dialog"
                 aria-labelledby="modal1" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -128,18 +127,18 @@
             </div>
 
           <!-- Project 2 -->
-          <div class="col-sm-5 col-md-5 col-lg-4">
+          <div class="col-sm-5 col-md-5 col-lg-4" id="project2" >
             <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p2.png" class="card-img" alt="Project 2" data-toggle="modal" data-target="#project2" style="cursor:pointer;">
+              <img src="images/p2.png" class="card-img" alt="Project 2" data-toggle="modal" data-target="#project2m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project2" style="cursor:pointer;">Project 2</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project2m" style="cursor:pointer;">Project 2</h5>
 
 
               </div>
             </div>
           </div>
 
-          <div class="modal fade" id="project2" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project2m" tabindex="-1" role="dialog"
                 aria-labelledby="modal2" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -163,17 +162,17 @@
 
           <!-- Project 3 -->
 
-          <div class="col-sm-5 col-md-5 col-lg-4">
+          <div class="col-sm-5 col-md-5 col-lg-4" id="project3">
 
             <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p3.png" class="card-img" alt="Project 3" data-toggle="modal" data-target="#project3" style="cursor:pointer;">
+              <img src="images/p3.png" class="card-img" alt="Project 3" data-toggle="modal" data-target="#project3m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project3" style="cursor:pointer;">Project 3</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project3m" style="cursor:pointer;">Project 3</h5>
               </div>
             </div>
           </div>
 
-          <div class="modal fade" id="project3" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project3m" tabindex="-1" role="dialog"
                 aria-labelledby="modal3" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -196,16 +195,16 @@
 
             <!-- Project 4 -->
 
-          <div class="col-sm-5 col-md-5 col-lg-4">
+          <div class="col-sm-5 col-md-5 col-lg-4" id="project4">
             <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p4.png" class="card-img" alt="Project 4" data-toggle="modal" data-target="#project4" style="cursor:pointer;">
+              <img src="images/p4.png" class="card-img" alt="Project 4" data-toggle="modal" data-target="#project4m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project4" style="cursor:pointer;">Project 4</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project4m" style="cursor:pointer;">Project 4</h5>
               </div>
             </div>
           </div>
 
-          <div class="modal fade" id="project4" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project4m" tabindex="-1" role="dialog"
                 aria-labelledby="modal4" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -228,18 +227,18 @@
 
             <!-- Project 5 -->
 
-          <div class="col-sm-5 col-md-5 col-lg-4">
+          <div class="col-sm-5 col-md-5 col-lg-4 " id="project5">
             <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p5.png" class="card-img" alt="Project 5" data-toggle="modal" data-target="#project5" style="cursor:pointer;">
+              <img src="images/p5.png" class="card-img" alt="Project 5" data-toggle="modal" data-target="#project5m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project5" style="cursor:pointer;">Project 5</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project5m" style="cursor:pointer;">Project 5</h5>
 
 
               </div>
             </div>
           </div>
 
-          <div class="modal fade" id="project5" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project5m" tabindex="-1" role="dialog"
                 aria-labelledby="modal5" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -261,11 +260,11 @@
             </div>
 
             <!-- Project 6 -->
-          <div class="col-sm-5 col-md-5 col-lg-4">
+          <div class="col-sm-5 col-md-5 col-lg-4" id="project6">
             <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p6.png" class="card-img" alt="Project 6" data-toggle="modal" data-target="#project6" style="cursor:pointer;">
+              <img src="images/p6.png" class="card-img" alt="Project 6" data-toggle="modal" data-target="#project6m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project6" style="cursor:pointer;">Project 6</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project6m" style="cursor:pointer;">Project 6</h5>
 
 
               </div>
@@ -273,7 +272,7 @@
           </div>
 
 
-          <div class="modal fade" id="project6" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project6m" tabindex="-1" role="dialog"
                 aria-labelledby="modal6" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -296,11 +295,11 @@
 
 
             <!-- Project 7 -->
-          <div class="col-sm-5 col-md-5 col-lg-4">
+          <div class="col-sm-5 col-md-5 col-lg-4" id="project7">
             <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p7.png" class="card-img" alt="Project 7" data-toggle="modal" data-target="#project7" style="cursor:pointer;">
+              <img src="images/p7.png" class="card-img" alt="Project 7" data-toggle="modal" data-target="#project7m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project7" style="cursor:pointer;">Project 7</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project7m" style="cursor:pointer;">Project 7</h5>
 
 
               </div>
@@ -308,7 +307,7 @@
           </div>
 
 
-          <div class="modal fade" id="project7" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project7m" tabindex="-1" role="dialog"
                 aria-labelledby="modal7" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -330,18 +329,18 @@
             </div>
 
             <!-- Project 8 -->
-          <div class="col-sm-5 col-md-5 col-lg-4">
+          <div class="col-sm-5 col-md-5 col-lg-4" id="project8">
             <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p8.png" class="card-img" alt="Project 8" data-toggle="modal" data-target="#project8" style="cursor:pointer;">
+              <img src="images/p8.png" class="card-img" alt="Project 8" data-toggle="modal" data-target="#project8m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project8" style="cursor:pointer;">Project 8</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project8m" style="cursor:pointer;">Project 8</h5>
 
 
               </div>
             </div>
           </div>
 
-          <div class="modal fade" id="project8" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project8m" tabindex="-1" role="dialog"
                 aria-labelledby="modal8" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -363,18 +362,18 @@
             </div>
 
           <!-- Project 9 -->
-          <div class="col-sm-5 col-md-5 col-lg-4">
+          <div class="col-sm-5 col-md-5 col-lg-4" id="project9">
             <div class="card shadow-sm p-3 mb-5 bg-white rounded text-black">
-              <img src="images/p9.png" class="card-img" alt="Project 9" data-toggle="modal" data-target="#project9" style="cursor:pointer;">
+              <img src="images/p9.png" class="card-img" alt="Project 9" data-toggle="modal" data-target="#project9m" style="cursor:pointer;">
               <div class="card-body">
-                <h5 class="card-title" data-toggle="modal" data-target="#project9" style="cursor:pointer;">Project 9</h5>
+                <h5 class="card-title project" data-toggle="modal" data-target="#project9m" style="cursor:pointer;">Project 9</h5>
 
 
               </div>
             </div>
           </div>
 
-          <div class="modal fade" id="project9" tabindex="-1" role="dialog"
+          <div class="modal fade" id="project9m" tabindex="-1" role="dialog"
                 aria-labelledby="modal9" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
